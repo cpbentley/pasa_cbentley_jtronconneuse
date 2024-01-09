@@ -43,7 +43,7 @@ public class JTronconneuseAppender extends BaseAppender {
       kryo.register(JSawLogEntry.class);
       kryo.register(ConfigChange.class);
       
-      config.setFlagFormat(ITechConfig.CONFIG_FLAG_05_TIMESTAMP, true);
+      config.setFlagFormat(ITechConfig.FORMAT_FLAG_05_TIMESTAMP, true);
 
    }
 
