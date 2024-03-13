@@ -30,7 +30,7 @@ public class JTronconneuseAppender extends BaseAppender {
 
    private JTroncoClientConnectionListener listener;
    public JTronconneuseAppender(JTroncoCtx jtc) {
-      super(jtc.getUCtx());
+      super(jtc.getUC());
 
       listener = new JTroncoClientConnectionListener(jtc);
       
