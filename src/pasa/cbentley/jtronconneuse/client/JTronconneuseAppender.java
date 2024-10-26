@@ -8,7 +8,7 @@ import com.esotericsoftware.kryonet.Client;
 import pasa.cbentley.core.src4.logging.BaseAppender;
 import pasa.cbentley.core.src4.logging.DLogEntry;
 import pasa.cbentley.core.src4.logging.DLogEntryOfConfig;
-import pasa.cbentley.core.src4.logging.ITechConfig;
+import pasa.cbentley.core.src4.logging.ITechDLogConfig;
 import pasa.cbentley.jtronconneuse.common.ConfigChange;
 import pasa.cbentley.jtronconneuse.common.JSawLogEntry;
 import pasa.cbentley.jtronconneuse.ctx.JTroncoCtx;
@@ -43,7 +43,7 @@ public class JTronconneuseAppender extends BaseAppender {
       kryo.register(JSawLogEntry.class);
       kryo.register(ConfigChange.class);
       
-      config.setFlagFormat(ITechConfig.FORMAT_FLAG_05_TIMESTAMP, true);
+      config.setFlagMaster(ITechDLogConfig.MASTER_FLAG_13_TIMESTAMP, true);
 
    }
 
